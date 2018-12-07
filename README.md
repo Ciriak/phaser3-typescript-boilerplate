@@ -28,9 +28,13 @@ The main game script is :
 
 /src/**app.ts**
 
-The main Scene (used for the demo) is
+The main Scene (used for the demo) is :
 
 /src/scripts/scenes/**MainScene.ts**
+
+The typescript definition file for phaser can be found in :
+
+/node_modules/phaser3-docs/typescript/**phaser.d.ts**
 
 ### Links
 
