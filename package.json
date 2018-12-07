@@ -1,0 +1,46 @@
+{
+  "name": "phaser-3-starter",
+  "version": "1.0.0",
+  "description": "Starter for Phaser 3 with typescript, gulp, and sass",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "gulp",
+    "dev": "gulp dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nj-neer/phaser3-typescript-starter.git"
+  },
+  "keywords": [
+    "phaser",
+    "gulp",
+    "game",
+    "typescript"
+  ],
+  "author": "Cyriaque DELAUNAY",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nj-neer/phaser3-typescript-starter/issues"
+  },
+  "homepage": "https://github.com/nj-neer/phaser3-typescript-starter/#readme",
+  "devDependencies": {
+    "browserify": "^16.2.3",
+    "del": "^3.0.0",
+    "gulp": "^4.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-livereload": "^4.0.1",
+    "gulp-sass": "^4.0.2",
+    "gulp-typescript": "^5.0.0",
+    "gulp-util": "^3.0.8",
+    "gulp-webserver": "^0.9.1",
+    "phaser3-docs": "git+https://github.com/photonstorm/phaser3-docs.git",
+    "tsify": "^4.0.1",
+    "typescript": "^3.2.1",
+    "vinyl-source-stream": "^2.0.0",
+    "watchify": "^3.11.0"
+  },
+  "dependencies": {
+    "phaser": "^3.15.1"
+  }
+}
