@@ -20,15 +20,24 @@ const audioPath = "./src/assets/audio/**/*";
 const graphicsPath = "./src/assets/graphics/**/*";
 
 gulp.task("copy-html", function() {
-  return gulp.src(htmlFilePath).pipe(gulp.dest("dist"));
+  return gulp
+    .src(htmlFilePath)
+    .pipe(gulp.dest("dist"))
+    .pipe(livereload());
 });
 
 gulp.task("copy-audio", function() {
-  return gulp.src(audioPath).pipe(gulp.dest("dist/assets/audio"));
+  return gulp
+    .src(audioPath)
+    .pipe(gulp.dest("dist/assets/audio"))
+    .pipe(livereload());
 });
 
 gulp.task("copy-graphics", function() {
-  return gulp.src(graphicsPath).pipe(gulp.dest("dist/assets/graphics"));
+  return gulp
+    .src(graphicsPath)
+    .pipe(gulp.dest("dist/assets/graphics"))
+    .pipe(livereload());
 });
 
 /**
