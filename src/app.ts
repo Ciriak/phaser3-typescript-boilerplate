@@ -2,8 +2,6 @@
 import "phaser";
 import { MainScene } from "./scripts/scenes/MainScene";
 
-const scale = 4;
-
 export class Game extends Phaser.Game {
   constructor() {
     const gameParameters: GameConfig = {
@@ -11,13 +9,12 @@ export class Game extends Phaser.Game {
       parent: "game",
       width: document.body.offsetWidth,
       height: window.innerHeight,
-      zoom: scale,
       backgroundColor: "#000000",
       scene: [MainScene],
       physics: {
         default: "arcade",
         arcade: {
-          debug: false
+          debug: false // true for collisions debug
         }
       }
     };
