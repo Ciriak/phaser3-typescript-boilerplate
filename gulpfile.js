@@ -1,10 +1,8 @@
 const gulp = require("gulp");
 const del = require("del");
-const ts = require("gulp-typescript");
 const concat = require("gulp-concat");
 const livereload = require("gulp-livereload");
 const webserver = require("gulp-webserver");
-const typescript = ts.createProject("./tsconfig.json");
 const browserify = require("browserify");
 const source = require("vinyl-source-stream");
 const tsify = require("tsify");
@@ -75,22 +73,8 @@ gulp.task("clean", function() {
   return del(["./dist/"]);
 });
 
-gulp.task("concat-scripts", function() {
-  return gulp
-    .src("./dist/scripts/**/*.js")
-    .pipe(concat("game.js"))
-    .pipe(gulp.dest("./dist/"));
-});
-
 gulp.task("clean-temps-scripts", function() {
   return del(["./dist/scripts"]);
-});
-
-gulp.task("typescript", function() {
-  return gulp
-    .src("./src/**/*.ts")
-    .pipe(typescript())
-    .pipe(gulp.dest("dist/scripts"));
 });
 
 var watchedBrowserify = watchify(
@@ -111,10 +95,7 @@ function bundle() {
     .pipe(livereload());
 }
 
-gulp.task(
-  "compile",
-  gulp.series("typescript", "concat-scripts", "clean-temps-scripts")
-);
+gulp.task("compile", gulp.series("clean-temps-scripts"));
 
 gulp.task("watchers", function() {
   livereload.listen();
