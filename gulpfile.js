@@ -115,7 +115,7 @@ gulp.task("sass", function() {
 });
 
 gulp.task("webserver", function() {
-  gulp.src("dist").pipe(
+  return gulp.src("dist").pipe(
     webserver({
       livereload: true,
       directoryListing: false,
