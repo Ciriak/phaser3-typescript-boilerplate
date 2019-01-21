@@ -119,7 +119,7 @@ gulp.task("webserver", function() {
     webserver({
       livereload: true,
       directoryListing: false,
-      open: true
+      open: false
     })
   );
 });
