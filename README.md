@@ -1,6 +1,6 @@
-# Phaser 3 Typescript Starter
+# Phaser 3 Typescript Example
 
-Starter for Phaser 3 with typescript, gulp, and sass
+Example of Phaser 3 runing with typescript, gulp, and sass
 
 ## Install
 
