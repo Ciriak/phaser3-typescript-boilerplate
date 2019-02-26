@@ -4,11 +4,11 @@ export class MainScene extends Phaser.Scene {
       key: "MainScene",
     });
   }
-  public preload() {
-    this.load.image("gameImage", "./assets/graphics/ui/game.png");
+  preload() {
+    this.load.image("gameImage", "https://i.imgur.com/pLGyJfS.png");
   }
 
-  public create() {
+  create() {
     this.add.image(400, 300, "gameImage");
   }
 }

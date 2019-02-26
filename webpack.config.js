@@ -1,12 +1,19 @@
 const path = require('path');
 var LiveReloadPlugin = require('webpack-livereload-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
+var webpack = require('webpack')
+
+var definePlugin = new webpack.DefinePlugin({
+    __DEV__: JSON.stringify(JSON.parse(process.env.BUILD_DEV || 'true')),
+    WEBGL_RENDERER: true,
+    CANVAS_RENDERER: true
+})
 
 module.exports = {
     entry: './src/app.ts',
-    devtool: 'inline-source-map',
     mode: 'development',
     target: 'web',
+    watch: true,
     module: {
         rules: [
             {
@@ -31,11 +38,9 @@ module.exports = {
         filename: 'game.js',
         path: path.resolve(__dirname, 'dist')
     },
-    devServer: {
-        contentBase: path.join(__dirname, 'dist'),
-        compress: true,
-    },
+
     plugins: [
+        definePlugin,
         new LiveReloadPlugin(),
         new CopyPlugin([
             { from: 'src/index.html' },
