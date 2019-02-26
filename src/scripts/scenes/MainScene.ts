@@ -1,14 +1,14 @@
 export class MainScene extends Phaser.Scene {
   constructor() {
     super({
-      key: "MainScene"
+      key: "MainScene",
     });
   }
-  preload() {
+  public preload() {
     this.load.image("gameImage", "./assets/graphics/ui/game.png");
   }
 
-  create() {
+  public create() {
     this.add.image(400, 300, "gameImage");
   }
 }
