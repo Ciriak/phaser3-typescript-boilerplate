@@ -7,18 +7,18 @@ import "./styles/style.scss";
 export class Game extends Phaser.Game {
   constructor() {
     const gameParameters: GameConfig = {
-      type: Phaser.AUTO,
-      parent: "game",
-      width: document.body.offsetWidth,
-      height: window.innerHeight,
       backgroundColor: "#000000",
-      scene: [MainScene],
+      height: window.innerHeight,
+      parent: "game",
       physics: {
-        default: "arcade",
         arcade: {
-          debug: false // true for collisions debug
-        }
+          debug: false, // true for collisions debug
+        },
+        default: "arcade",
+        scene: [MainScene],
       },
+      type: Phaser.AUTO,
+      width: document.body.offsetWidth,
     };
     super(gameParameters);
   }
@@ -26,5 +26,5 @@ export class Game extends Phaser.Game {
 
 // when the page is loaded, create our game instance
 window.onload = () => {
-  new Game();
+  const game = new Game();
 };
