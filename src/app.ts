@@ -1,6 +1,8 @@
 /// <reference path="../node_modules/phaser3-docs/typescript/phaser.d.ts" />
+
 import "phaser";
 import { MainScene } from "./scripts/scenes/MainScene";
+import "./styles/style.scss";
 
 export class Game extends Phaser.Game {
   constructor() {
@@ -16,7 +18,7 @@ export class Game extends Phaser.Game {
         arcade: {
           debug: false // true for collisions debug
         }
-      }
+      },
     };
     super(gameParameters);
   }
