@@ -1,5 +1,6 @@
 const path = require('path');
 var LiveReloadPlugin = require('webpack-livereload-plugin');
+const CopyPlugin = require('copy-webpack-plugin');
 
 module.exports = {
     entry: './src/app.ts',
@@ -26,6 +27,13 @@ module.exports = {
         compress: true,
     },
     plugins: [
-        new LiveReloadPlugin()
+        new LiveReloadPlugin(),
+        new CopyPlugin([
+            { from: 'src/index.html' },
+            {
+                from: 'src/assets',
+                to: 'assets'
+            }
+        ]),
     ]
 };

@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/nj-neer/phaser3-typescript-starter/#readme",
   "devDependencies": {
+    "copy-webpack-plugin": "^5.0.0",
     "phaser3-docs": "git+https://github.com/photonstorm/phaser3-docs.git",
     "ts-loader": "^5.3.3",
     "typescript": "^3.3.3333",
