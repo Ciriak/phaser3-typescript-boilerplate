@@ -6,6 +6,7 @@ module.exports = {
     entry: './src/app.ts',
     devtool: 'inline-source-map',
     mode: 'development',
+    target: 'web',
     module: {
         rules: [
             {
