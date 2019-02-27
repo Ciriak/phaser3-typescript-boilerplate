@@ -1,6 +1,6 @@
 # Phaser 3 Typescript Example
 
-Example of Phaser 3 runing with typescript, gulp, and sass
+Example of Phaser 3 running with typescript, Webpack, and sass
 
 ## Install
 
@@ -20,7 +20,7 @@ npm install
 npm run dev
 ```
 
-This will launch a Webserver on http://localhost:8000 and watch for changes
+This will launch a Webserver on http://localhost:8080 and watch for changes
 
 ## Informations
 
@@ -39,4 +39,4 @@ The typescript definition file for phaser can be found in :
 ### Links
 
 - [Phaser Website](https://phaser.io/)
-- [Phaser 3 documentation (bad)](https://photonstorm.github.io/phaser3-docs/)
+- [Phaser 3 documentation](https://photonstorm.github.io/phaser3-docs/)
