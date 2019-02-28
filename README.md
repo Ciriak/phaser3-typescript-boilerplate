@@ -1,4 +1,4 @@
-# Phaser 3 Typescript Example
+# Phaser 3 Typescript Boilerplate
 
 Example of Phaser 3 running with typescript, Webpack, and sass
 
