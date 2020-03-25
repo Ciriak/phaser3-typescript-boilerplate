@@ -2,6 +2,12 @@
   "files": [
     "src/app.ts"
   ],
+  "typeRoots": [
+    "./node_modules/phaser/types"
+  ],
+  "types": [
+    "Phaser"
+  ],
   "compilerOptions": {
     "noImplicitAny": true,
     "target": "es5",
