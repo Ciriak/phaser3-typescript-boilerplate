@@ -13,7 +13,6 @@ module.exports = {
     entry: './src/app.ts',
     mode: 'development',
     target: 'web',
-    watch: true,
     module: {
         rules: [
             {
