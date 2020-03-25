@@ -2,7 +2,7 @@
 
 ## Example of Phaser 3 running with typescript, Webpack
 
-[![Phaser3tsBoilerplate](https://circleci.com/gh/Ciriak/phaser3-typescript-boilerplate.svg?style=svg)](https://circleci.com/gh/circleci/circleci-docs)
+[![Phaser3tsBoilerplate](https://circleci.com/gh/Ciriak/phaser3-typescript-boilerplate.svg?style=svg)](https://circleci.com/gh/Ciriak/phaser3-typescript-boilerplate)
 [![Maintainability](https://api.codeclimate.com/v1/badges/0462a81113e546d5e34b/maintainability)](https://codeclimate.com/github/Ciriak/phaser3-typescript-boilerplate/maintainability)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 
