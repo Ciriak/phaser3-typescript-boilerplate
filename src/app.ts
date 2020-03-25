@@ -1,10 +1,8 @@
-/// <reference path="../node_modules/phaser3-docs/typescript/phaser.d.ts" />
-
-import "phaser";
 import MainScene from "./scripts/scenes/MainScene";
 import "./styles/style.scss";
+import * as Phaser from "phaser";
 
-const gameConfig: GameConfig = {
+const gameConfig: Phaser.Types.Core.GameConfig = {
   backgroundColor: "#000000",
   height: window.innerHeight,
   parent: "game",
