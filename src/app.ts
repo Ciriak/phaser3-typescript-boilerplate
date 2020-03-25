@@ -1,11 +1,11 @@
 import MainScene from "./scripts/scenes/MainScene";
 import "./styles/style.scss";
-import * as Phaser from "phaser";
+import "phaser";
 
 const gameConfig: Phaser.Types.Core.GameConfig = {
   backgroundColor: "#000000",
   height: window.innerHeight,
-  parent: "game",
+  parent: 'game',
   physics: {
     arcade: {
       debug: false, // true for collisions debug
@@ -16,4 +16,5 @@ const gameConfig: Phaser.Types.Core.GameConfig = {
   type: Phaser.AUTO,
   width: document.body.offsetWidth,
 };
-const game = new Phaser.Game(gameConfig);
+// tslint:disable-next-line: no-unused-expression
+new Phaser.Game(gameConfig);

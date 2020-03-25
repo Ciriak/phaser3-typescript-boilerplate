@@ -1,23 +1,27 @@
 # Phaser 3 Typescript Boilerplate
 
-Example of Phaser 3 running with typescript, Webpack, and sass
+## Example of Phaser 3 running with typescript, Webpack
+
+[![Phaser3tsBoilerplate](https://circleci.com/gh/Ciriak/phaser3-typescript-boilerplate.svg?style=svg)](https://circleci.com/gh/circleci/circleci-docs)
+[![Maintainability](https://api.codeclimate.com/v1/badges/0462a81113e546d5e34b/maintainability)](https://codeclimate.com/github/Ciriak/phaser3-typescript-boilerplate/maintainability)
+[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 
 ## Install
-
-- Clone or download this repo
-
-- Install the dependencies
 
 ```
 npm install
 ```
 
-- Create an amazing game !
+-   Clone or download this repo
+
+-   Install the dependencies
+
+*   Create an amazing game !
 
 ## Developing
 
 ```
-npm run dev
+npm start
 ```
 
 This will launch a Webserver on http://localhost:8080 and watch for changes
@@ -32,11 +36,7 @@ The main Scene (used for the demo) is :
 
 /src/scripts/scenes/**MainScene.ts**
 
-The typescript definition file for phaser can be found in :
-
-/node_modules/phaser3-docs/typescript/**phaser.d.ts**
-
 ### Links
 
-- [Phaser Website](https://phaser.io/)
-- [Phaser 3 documentation](https://photonstorm.github.io/phaser3-docs/)
+-   [Phaser Website](https://phaser.io/)
+-   [Phaser 3 documentation](https://photonstorm.github.io/phaser3-docs/)
