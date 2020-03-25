@@ -1,10 +1,11 @@
 {
-  "name": "phaser-3-example",
+  "name": "phaser3-typescript-boilerplate",
   "version": "1.0.0",
   "description": "Example of Phaser 3 running with typescript and webpack",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run dev",
     "dev": "webpack-dev-server",
     "build": "webpack --mode=production"
   },
@@ -24,21 +25,19 @@
     "url": "https://github.com/nj-neer/phaser3-typescript-starter/issues"
   },
   "homepage": "https://github.com/nj-neer/phaser3-typescript-starter/#readme",
-  "devDependencies": {
-    "copy-webpack-plugin": "^5.0.0",
+  "devDependencies": {},
+  "dependencies": {
+    "copy-webpack-plugin": "^5.1.1",
     "css-loader": "^2.1.0",
-    "node-sass": "^4.11.0",
-    "phaser3-docs": "git+https://github.com/photonstorm/phaser3-docs.git",
+    "node-sass": "^4.13.1",
+    "phaser": "^3.22.0",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.1",
     "ts-loader": "^5.3.3",
-    "typescript": "^3.3.3333",
+    "typescript": "^3.8.3",
     "webpack": "^4.29.5",
     "webpack-cli": "^3.2.3",
     "webpack-dev-server": "^3.2.1",
     "webpack-livereload-plugin": "^2.2.0"
-  },
-  "dependencies": {
-    "phaser": "^3.15.1"
   }
 }
