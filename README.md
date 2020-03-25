@@ -17,7 +17,7 @@ npm install
 ## Developing
 
 ```
-npm run dev
+npm start
 ```
 
 This will launch a Webserver on http://localhost:8080 and watch for changes
