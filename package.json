@@ -1,54 +1,54 @@
 {
-  "name": "phaser3-typescript-boilerplate",
-  "version": "1.0.0",
-  "description": "Example of Phaser 3 running with typescript and webpack",
-  "main": "app.js",
-  "scripts": {
-    "test": "npm run build",
-    "start": "npm run dev",
-    "dev": "webpack-dev-server",
-    "lint": "pretty-quick --staged",
-    "build": "webpack --mode=production"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/nj-neer/phaser3-typescript-starter.git"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run lint",
-      "pre-push": "npm test"
+    "name": "phaser3-typescript-boilerplate",
+    "version": "1.0.0",
+    "description": "Example of Phaser 3 running with typescript and webpack",
+    "main": "app.js",
+    "scripts": {
+        "test": "npm run build",
+        "start": "npm run dev",
+        "dev": "webpack-dev-server",
+        "lint": "pretty-quick --staged",
+        "build": "webpack --mode=production"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/nj-neer/phaser3-typescript-starter.git"
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "npm run lint",
+            "pre-push": "npm test"
+        }
+    },
+    "keywords": [
+        "phaser",
+        "gulp",
+        "game",
+        "typescript"
+    ],
+    "author": "Cyriaque DELAUNAY",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/nj-neer/phaser3-typescript-starter/issues"
+    },
+    "homepage": "https://github.com/nj-neer/phaser3-typescript-starter/#readme",
+    "devDependencies": {},
+    "dependencies": {
+        "copy-webpack-plugin": "^5.1.1",
+        "css-loader": "^2.1.0",
+        "husky": "^4.2.3",
+        "node-sass": "^4.13.1",
+        "phaser": "^3.22.0",
+        "prettier": "^2.0.2",
+        "pretty-quick": "^2.0.1",
+        "sass-loader": "^7.1.0",
+        "style-loader": "^0.23.1",
+        "ts-loader": "^5.3.3",
+        "tslint-config-prettier": "^1.18.0",
+        "typescript": "^3.8.3",
+        "webpack": "^4.29.5",
+        "webpack-cli": "^3.2.3",
+        "webpack-dev-server": "^3.2.1",
+        "webpack-livereload-plugin": "^2.2.0"
     }
-  },
-  "keywords": [
-    "phaser",
-    "gulp",
-    "game",
-    "typescript"
-  ],
-  "author": "Cyriaque DELAUNAY",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/nj-neer/phaser3-typescript-starter/issues"
-  },
-  "homepage": "https://github.com/nj-neer/phaser3-typescript-starter/#readme",
-  "devDependencies": {},
-  "dependencies": {
-    "copy-webpack-plugin": "^5.1.1",
-    "css-loader": "^2.1.0",
-    "husky": "^4.2.3",
-    "node-sass": "^4.13.1",
-    "phaser": "^3.22.0",
-    "prettier": "^2.0.2",
-    "pretty-quick": "^2.0.1",
-    "sass-loader": "^7.1.0",
-    "style-loader": "^0.23.1",
-    "ts-loader": "^5.3.3",
-    "tslint-config-prettier": "^1.18.0",
-    "typescript": "^3.8.3",
-    "webpack": "^4.29.5",
-    "webpack-cli": "^3.2.3",
-    "webpack-dev-server": "^3.2.1",
-    "webpack-livereload-plugin": "^2.2.0"
-  }
 }
