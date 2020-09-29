@@ -12,6 +12,4 @@ export default class MainScene extends Phaser.Scene {
   create() {
     this.add.image(400, 300, "gameImage");
   }
-
 }
-

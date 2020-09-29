@@ -5,7 +5,7 @@ import "phaser";
 const gameConfig: Phaser.Types.Core.GameConfig = {
   backgroundColor: "#000000",
   height: window.innerHeight,
-  parent: 'game',
+  parent: "game",
   physics: {
     arcade: {
       debug: false, // true for collisions debug
